@@ -14,4 +14,12 @@ public class Rectangle extends Shape {
         return height * width;
     }
 
+    public double hypotenuse() {
+        return Math.sqrt(height * height + width * width);
+    }
+
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle(3, 4);
+        System.out.println(r.hypotenuse());
+    }
 }

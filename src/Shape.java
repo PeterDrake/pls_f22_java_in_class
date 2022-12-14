@@ -14,4 +14,12 @@ public class Shape {
         return -1;
     }
 
+    public void foo(Shape s) {
+        System.out.println("Using the version that takes a Shape");
+    }
+
+    public void foo(Circle c) {
+        System.out.println("Using the version that takes a Circle");
+    }
+
 }
